@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+  background: #e6d8b8;
+  margin: 0;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Contenedor general de la calculadora */
+.calculator {
+  width: 360px;
+  background: #d2c49c;
+  border: 6px solid #7a6f54;
+  box-shadow: inset 0 0 10px #a59a81;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Estilo del display */
+.calculator-display {
+  background-color: #002a00;
+  color: #00ff66;
+  font-size: 65px;
+  padding: 10px 20px;
+  text-align: right;
+  border: 3px inset #7f8f5c;
+  height: 80px;
+  overflow: hidden;
+}
+
+
+
+/* Contenedor del teclado: se divide en dos partes usando flex */
+.calculator-keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Botón 0 ocupa 2 columnas */
+button.double {
+  grid-column: span 2;
+}
+
+/* Colores para los botones de operación */
+.calculator button[value="sum"],
+.calculator button[value="subtract"],
+.calculator button[value="mult"],
+.calculator button[value="div"],
+.calculator button[value="result"] {
+  background-color: #958b63;
+  color: #1c1c1c;
+}
+
+
+/* Grupo de botones numéricos y funciones, en cuadrícula de 3 columnas */
+.calculator-keyboard_container_numbers {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Grupo de botones de operadores, dispuestos verticalmente */
+.calculator-keyboard_container_operators {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Estilo común para todos los botones */
+.calculator button {
+  font-size: 28px;
+  background-color: #b8ab78;
+  border: 3px solid #554f3a;
+  color: #1c1c1c;
+  padding: 15px 0;
+  cursor: pointer;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,0.3);
+  transition: all 0.2s ease;
+}
+
+.calculator button:hover {
+  background-color: #cfc393;
+}
+
+.calculator button:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.3);
+}
+
+/* En la cuadrícula numérica, el botón "0" ocupará dos columnas */
+.calculator-keyboard_container_numbers button[value="0"] {
+  grid-column: span 2;
+}
+
