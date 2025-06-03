@@ -1,12 +1,81 @@
-# React + Vite
+# 🧮 Proyecto Calculadora
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una calculadora básica implementada con **React**, usando **Vite** como entorno de desarrollo, y documentada visualmente con **Storybook**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- ⚛️ React
+- ⚡ Vite
+- 🧪 Jest + Testing Library
+- 📘 Storybook
+- 🎨 CSS personalizado
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Instalación
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/tu-usuario/tu-repo.git
+
+# Instala dependencias
+npm install
+```
+
+---
+
+## 🧪 Ejecutar pruebas
+
+```bash
+npm run test
+```
+
+---
+
+## 🧱 Ejecutar la app en modo desarrollo
+
+```bash
+npm run dev
+```
+
+---
+
+## 📚 Ver Storybook
+
+```bash
+npm run storybook
+```
+
+---
+
+## 🛠️ Build para producción
+
+```bash
+npm run build
+```
+
+---
+
+## 📂 Estructura del proyecto
+
+```
+├── src
+│ ├── tests # Pruebas con Jest
+│ ├── stories # Historias para Storybook
+│ ├── Calculator.jsx # Componente principal de la calculadora
+│ ├── useCalculator.js # Custom Hook para lógica de operaciones
+│ ├── Display.jsx, Keyboard.jsx, etc.
+├── .storybook # Configuración de Storybook
+├── public # Archivos públicos como favicon
+├── .gitignore # Ignora node_modules, dist, etc.
+├── jest.config.js # Configuración de Jest
+├── vite.config.js # Configuración de Vite
+├── package.json
+```
+
+---
+
+## 📄 Autor
+Eliazar Canastuj https://github.com/can23384
