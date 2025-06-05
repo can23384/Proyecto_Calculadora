@@ -18,7 +18,7 @@ Una calculadora básica implementada con **React**, usando **Vite** como entorno
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/tu-repo.git
+git clone https://github.com/can23384/Proyecto_Calculadora.git
 
 # Instala dependencias
 npm install
